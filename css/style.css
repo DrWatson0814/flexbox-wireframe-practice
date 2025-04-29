@@ -63,3 +63,8 @@ body {
     color: white;
     border-radius: 5px;
 }
+
+
+@media screen (min-width: 1025px) {
+    
+}
