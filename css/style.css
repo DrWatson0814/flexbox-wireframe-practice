@@ -41,7 +41,7 @@ body {
     background-color: #e4195b;
     color: white;
     justify-content: center;
-    /* flex-shrink: 1; */
+    flex-shrink: 1;
     margin: 5px 5px 5px 5px;
     border-radius: 5px;
     padding-top: 10px;
@@ -66,5 +66,8 @@ body {
 
 
 @media screen (min-width: 1025px) {
-    
+    body {
+        flex: 1;
+        flex-wrap: 0;
+    }
 }
