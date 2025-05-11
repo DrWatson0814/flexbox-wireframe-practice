@@ -23,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 25px;
+  flex-grow: 1;
 } 
 
 .new-row {
@@ -53,7 +54,7 @@ body {
     text-align: center;
     margin: 5px 5px 5px 5px;
     border-radius: 25px;
-    flex-grow: 2;
+    flex-grow: 3;
 
 }
 
@@ -71,10 +72,11 @@ body {
     color: white;
     text-align: center;
     border-radius: 25px;
+    flex-grow: 1;
 }
 
 
-@media (min-width: 1025) {
+@media screen, (min-width: 1440px) {
   html {
     height: 100%;
   }
@@ -87,19 +89,19 @@ body {
     width: 75vw;
   }
 
-  main {
+  .new-row {
+    display: flex;
     flex: 1;
     flex-direction: row-reverse;
-    display: flex;
     flex-wrap: wrap;
     gap: 1rem;
   }
 
   #body-text {
-    flex: 1 0 15rem;
+    flex: 1 1 rem;
   }
   
   #side-bar {
-    flex: 0 0 10rem;
+    flex: 1 0 15rem;
   }
 }
