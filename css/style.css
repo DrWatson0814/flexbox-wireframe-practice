@@ -36,7 +36,7 @@ body {
     padding: 20px 10px 20px 10px;
     gap: 15px;
     border-radius: 10px;
-    flex-grow: 3;
+    flex-grow: 2;
     font-size: x-large;
 
 }
@@ -48,7 +48,7 @@ body {
     text-align: center;
     margin: 5px 5px 5px 5px;
     border-radius: 10px;
-    flex-grow: 1;
+    flex-grow: 2;
 
 }
 
@@ -71,8 +71,32 @@ body {
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1440px) {
+  html {
+    height: 100%;
+  }
+  _
   body {
     display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 75vw;
+  }
+
+  main {
+    flex: 1;
+    flex-direction: row-reverse;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #body-text {
+    flex: 3 0 15rem;
+  }
+  
+  #side-bar {
+    margin-right: 0 0 10rem;
   }
 }
